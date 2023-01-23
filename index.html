@@ -82,10 +82,27 @@
 				color: #000000;
 				background-color: rgba(0,255,255,0.75);
 			}
+			#word img {
+				width: 100px;
+				position: absolute;
+				margin: 10;
+    }	
 		</style>
 	</head>
 	<body>
-
+		<!-- <div id="word">
+			<a href="https://www.facebook.com/tuantvtvip">
+				<img width="300" src="https://i.ibb.co/DrNxPmD/imganime-671.jpg" title="space pink" />
+			</a>
+		</div> -->
+		<div class="">
+			<audio id="myAudio">
+		  <source src="music.ogg" type="audio/ogg">
+		  <source src="./batcoccontim.mp3" type="audio/mpeg">
+		</audio>
+		<button class="glow-on-hover" onclick="playAudio()" type="button">Play Music </button>&nbsp;&nbsp;
+		<button class="glow-on-hover" onclick="pauseAudio()" type="button">Stop Music</button> 
+		</div>
 		<div id="container"></div>
 		<div id="menu">
 			<button id="table">TABLE🍀</button>
@@ -454,5 +471,16 @@
 			}
 
 		</script>
+		<script>
+			var x = document.getElementById("myAudio"); 
+			
+			function playAudio() { 
+			  x.play(); 
+			} 
+			
+			function pauseAudio() { 
+			  x.pause(); 
+			} 
+			</script>
 	</body>
 </html>
